@@ -37,7 +37,7 @@
 	  {{#each smstexts}}
       <div class="post">
         <div class="post-content">
-          <h3><span>{{> smstextListItem}}</span></h3>
+          {{> smstextListItem}}
         </div> 
       </div>
 	  {{/each}}
@@ -50,7 +50,7 @@
 </template>
 
 <template name="smstextListItem">
-   {{From}}: {{Body}}
+   <h3><span><a href="#">{{From}}</a> {{Body}}</span></h3>
   <a href="{{pathFor 'smstextShow'}}">
 	  
   </a>
