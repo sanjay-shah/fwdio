@@ -1,0 +1,58 @@
+<head>
+  <title>fwdio</title>
+</head>
+
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">fwdio ➜ fwd ur text</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</body>
+
+<template name="notFound">
+  <h1>Page not found!</h1>
+</template>
+
+<template name="loading">
+  <h1>loading...</h1>
+</template>
+
+<template name="smstexts">
+  
+  <div class="post">
+    <div class="post-content">
+      <h3><span>text +1 (858) 500 3839 </span> <span> try it now! </span></h3>
+    </div> 
+  </div>
+  
+	  {{#each smstexts}}
+      <div class="post">
+        <div class="post-content">
+          <h3><span>{{> smstextListItem}}</span></h3>
+        </div> 
+      </div>
+	  {{/each}}
+    
+  <h6></h6>
+  <div class="post">
+    <div class="post-content">
+      <h3><span>fwdio ➜ coming soon</span></h3>
+    </div> 
+  </div>
+</template>
+
+<template name="smstextListItem">
+   {{From}}: {{Body}}
+  <a href="{{pathFor 'smstextShow'}}">
+	  
+  </a>
+</template>
