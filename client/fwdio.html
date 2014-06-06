@@ -3,19 +3,41 @@
 </head>
 
 <body>
-  <div class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">fwdio ➜ fwd ur text</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <a class="navbar-brand" href="#">#fwd +1 (858) 500 3839 </a>
-      </ul>
-    </div>
+  
+  
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">fwdio ➜ coming soon</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">text +1 (858) 500 3839</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  
+  
+  <div class="hero-unit">
+  <h1 align="center">Want in?</h1>
+  <p>
+    
+  </p>
+  <p align="center"><a class="btn btn-primary btn-large" >Request Invite</a></p>
   </div>
+  
+  
+    
 </body>
 
 <template name="notFound">
@@ -28,9 +50,18 @@
 
 <template name="smstexts">
   
+  <div class="row">
+  <div class="span8">...
+  
+  </div> 
+  <div class="span4">...
+  </div>
+  </div>
+  
+  
   <div class="post">
     <div class="post-content">
-      <h3><span>text +1 (858) 500 3839 <a href="#">try it now!</a></span></h3>
+      <h3><span><a href="#">try it now!</a> text +1 (858) 500 3839 and see your message show-up real time here</span></h3>
     </div> 
   </div>
   
@@ -47,11 +78,12 @@
       <h3><span>fwdio ➜ coming soon</span></h3>
     </div> 
   </div>
+  
 </template>
 
 <template name="smstextListItem">
    <h3><span><a href="#">{{From}}</a> {{Body}}</span></h3>
   <a href="{{pathFor 'smstextShow'}}">
-	  
   </a>
 </template>
+
