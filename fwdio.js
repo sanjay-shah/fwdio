@@ -1,4 +1,5 @@
 SMSTexts = new Meteor.Collection('smstexts');
+Invitees = new Meteor.Collection('invitees');
 
 Router.configure({
     layout: 'layout',
@@ -61,6 +62,22 @@ if (Meteor.isServer) {
         return SMSTexts.find({
             _id: id
         });
+    });
+    
+    Meteor.methods({
+      addInvitees: function (invitee) {
+        console.log("addInvitees called: " + JSON.stringify(invitee));
+        check(invitee.email, String);
+        //check(invitee.phone, [Number]);
+        // .. do stuff ..
+        Invitees.insert(invitee);
+        return "Thank You!";
+      },
+
+      bar: function () {
+        // .. do other stuff ..
+        return "baz";
+      }
     });
     
 }
