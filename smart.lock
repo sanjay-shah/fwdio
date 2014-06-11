@@ -4,7 +4,8 @@
     "basePackages": {
       "bootstrap-3": {},
       "iron-router": {},
-      "leaflet": {}
+      "leaflet": {},
+      "holder": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/bevanhunt/meteor-leaflet.git",
         "tag": "v0.3.8",
         "commit": "84caaa2e8aac1c7f7b585a6b64163a1de406add4"
+      },
+      "holder": {
+        "git": "https://github.com/Dsyko/meteor-holder.git",
+        "tag": "v2.3.2",
+        "commit": "c2c1e297088318fc7e3c4b2e63d996cad37b28f2"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

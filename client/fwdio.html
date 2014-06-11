@@ -28,16 +28,9 @@
     </div><!-- /.container-fluid -->
   </nav>
   
-  
   {{> requestInviteBanner}}
-  {{> requestInviteModal}}
+  {{> requestInviteModal}} 
   
-  
-  
-  
-  
-  
-    
 </body>
 
 <template name="notFound">
@@ -50,9 +43,7 @@
 
 <template name="smstexts">
   <div class="container-fluid">
-    <div class="row-fluid">  
-        
-    </div>
+    {{> featurette}}
     <div class="row-fluid">  
         <div class="col-lg-3">
           <div class="panel panel-default">
@@ -64,11 +55,11 @@
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
-        {{#each smstexts}}
-        <div class="col-lg-3">
-          {{> smstextListItem}}
-        </div><!-- /.col-lg-4 -->
-        {{/each}}
+      {{#each smstexts}}
+      <div class="col-lg-3">
+        {{> smstextListItem}}
+      </div><!-- /.col-lg-4 -->
+      {{/each}}
     </div>
   </div>
   
@@ -144,6 +135,52 @@
       </div>
     </div>
   </div>
+</template>
+
+<template name="featurette">
+  <!-- START THE FEATURETTES -->
+  <div class="container">
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Port your other number to fwdio. <span class="text-muted">It's easy.</span></h2>
+        <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+      </div>
+      <div class="col-md-5">
+        <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-5">
+        <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Or get a new fwdio number. <span class="text-muted">It's that easy.</span></h2>
+        <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Start using fwdio now. <span class="text-muted">The smartest cloud phone!</span></h2>
+        <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+      </div>
+      <div class="col-md-5">
+        <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+  </div><!-- /.container -->
+  
 </template>
 
 <template name="footer">

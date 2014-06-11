@@ -65,6 +65,10 @@ Template.requestInviteModal.events({
   }
 });
 
+Template.featurette.rendered({
+  
+});
+
 
 
 
