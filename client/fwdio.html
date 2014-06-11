@@ -44,23 +44,8 @@
 <template name="smstexts">
   <div class="container-fluid">
     {{> featurette}}
-    <div class="row-fluid">  
-        <div class="col-lg-3">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">try it now!</h3>
-            </div>
-            <div class="panel-body">
-              <p>text +1 (858) 500 3839 and see your message show-up real time here.</p>
-            </div>
-          </div>
-        </div><!-- /.col-lg-4 -->
-      {{#each smstexts}}
-      <div class="col-lg-3">
-        {{> smstextListItem}}
-      </div><!-- /.col-lg-4 -->
-      {{/each}}
-    </div>
+    {{> requestInviteRepeatBanner}}
+    
   </div>
   
   {{> footer}}
@@ -95,6 +80,22 @@
         <div class="jumbotron">
           <h1 align="center">
             Want in?
+          </h1>
+          <p align="center">
+            <a href="#requestInvite" role="button" class="btn btn-primary btn-lg open-modal" >Request an invite!</a>  
+          </p>
+          <p align="center">fwdio ➜ never carry two phones</p>
+        </div>
+      </div>
+  </div>
+</template>
+
+<template name="requestInviteRepeatBanner">
+  <div class="container-fluid">
+      <div class="row-fluid">  
+        <div class="jumbotron">
+          <h1 align="center">
+            Yes, now I want in.
           </h1>
           <p align="center">
             <a href="#requestInvite" role="button" class="btn btn-primary btn-lg open-modal" >Request an invite!</a>  
@@ -144,7 +145,7 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Port your other number to fwdio. <span class="text-muted">It's easy.</span></h2>
+        <h2 class="featurette-heading">Have you ever had to carry two phones?<span class="text-muted"></span></h2>
         <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
       </div>
       <div class="col-md-5">
@@ -159,7 +160,7 @@
         <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
       </div>
       <div class="col-md-7">
-        <h2 class="featurette-heading">Or get a new fwdio number. <span class="text-muted">It's that easy.</span></h2>
+        <h2 class="featurette-heading">One for work and one for personal use? <span class="text-muted"></span></h2>
         <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
       </div>
     </div>
@@ -168,12 +169,49 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Start using fwdio now. <span class="text-muted">The smartest cloud phone!</span></h2>
+        <h2 class="featurette-heading">And you wished there was a easy solution? <span class="text-muted"></span></h2>
         <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
       </div>
       <div class="col-md-5">
         <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
       </div>
+    </div>
+    
+    <hr class="featurette-divider">
+    
+
+    <div class="row featurette">
+      <div class="col-md-5">
+        <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Well, your wish is about to come true! <span class="text-muted"></span></h2>
+        <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+      </div>
+      
+    </div>
+    
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"><span class="text-muted">fwdio ➜</span> is the worlds smartest cloud phone.<span class="text-muted"></span></h2>
+        <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+      </div>
+      <div class="col-md-5">
+        <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+      </div>
+    </div>
+    
+    <div class="row featurette">
+      <div class="col-md-5">
+        <!--<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading"><span class="text-muted">fwdio ➜</span> lets you forward voice and text to virtually anywhere. <span class="text-muted"></span></h2>
+        <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+      </div>
+      
     </div>
 
     <hr class="featurette-divider">

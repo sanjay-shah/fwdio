@@ -28,9 +28,6 @@ Template.map.rendered = function() {
           marker.bindPopup('+13033445678 <br>Yes, I want in. Please sign me up.')
       .openPopup();
         });
-        
-        marker.bindPopup('+13033445678 <br>Yes, I want in. Please sign me up.')
-    .openPopup();
     
     } 
   });
@@ -38,6 +35,13 @@ Template.map.rendered = function() {
 
 
 Template.requestInviteBanner.events = {
+    "click .open-modal" : function(e,t) {
+    e.preventDefault();
+    $("#requestInviteModal").modal("show");
+    }
+};
+
+Template.requestInviteRepeatBanner.events = {
     "click .open-modal" : function(e,t) {
     e.preventDefault();
     $("#requestInviteModal").modal("show");
@@ -63,10 +67,6 @@ Template.requestInviteModal.events({
       event.stopPropagation();
     return true;
   }
-});
-
-Template.featurette.rendered({
-  
 });
 
 
